@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background:
+    radial-gradient(circle at top right,
+      rgba(96,165,250,0.12),
+      transparent 30%),
+    #0f172a;
+  }
+
+  ::selection {
+    background: rgba(96, 165, 250, 0.3);
+    color: #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+@layer components {
+
+  /* Layout */
+  .container-main {
+    @apply max-w-6xl mx-auto px-6 md:px-10;
+  }
+
+  .section {
+    @apply py-24 md:py-32;
+  }
+
+  /* Typography */
+  .display-xl {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-7xl md:text-9xl font-medium leading-none tracking-tight;
+    color: #f8fafc;
+  }
+
+  .display-lg {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-5xl md:text-7xl font-medium leading-none tracking-tight;
+    color: #f8fafc;
+  }
+
+  .display-md {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-4xl md:text-5xl font-medium leading-tight tracking-tight;
+    color: #f8fafc;
+  }
+
+  .body-md {
+    @apply text-base font-light leading-relaxed;
+    color: #94a3b8;
+  }
+
+  .label {
+    @apply text-xs font-medium tracking-widest uppercase;
+    color: #60a5fa;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3
+           text-sm font-medium tracking-wide cursor-pointer border-0
+           transition-all duration-300 active:scale-[0.98];
+
+    background: #60a5fa;
+    color: #0f172a;
+  }
+
+  .btn-primary:hover {
+    background: #93c5fd;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3
+           text-sm font-medium tracking-wide cursor-pointer
+           transition-all duration-300 active:scale-[0.98];
+
+    border: 1px solid #334155;
+    color: #e2e8f0;
+  }
+
+  .btn-outline:hover {
+    border-color: #60a5fa;
+    color: #60a5fa;
+    background: rgba(96, 165, 250, 0.05);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-3 py-2
+           text-sm font-light cursor-pointer
+           transition-colors duration-200;
+    color: #94a3b8;
+  }
+
+  .btn-ghost:hover {
+    color: #60a5fa;
+  }
+
+  /* Tags */
+  .tag {
+    @apply inline-block px-3 py-1 text-xs font-light
+           tracking-wide transition-all duration-200 cursor-default;
+
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: #cbd5e1;
+  }
+
+  .tag:hover {
+    border-color: #60a5fa;
+    color: #60a5fa;
+  }
+
+  .tag-accent {
+    @apply inline-block px-3 py-1 text-xs font-light tracking-wide;
+
+    background: rgba(96, 165, 250, 0.12);
+    color: #60a5fa;
+    border: 1px solid rgba(96, 165, 250, 0.25);
+  }
+
+  /* Section */
+  .section-label {
+    @apply label mb-3 block;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+
+    @apply text-4xl md:text-5xl font-medium
+           leading-tight tracking-tight mb-4;
+
+    color: #f8fafc;
+  }
+
+  .section-divider {
+    width: 48px;
+    height: 2px;
+    background: #60a5fa;
+    margin-top: 20px;
+  }
+
+  /* Cards */
+  .card {
+    @apply p-6 transition-all duration-300;
+
+    background: #1e293b;
+    border: 1px solid #334155;
+  }
+
+  .card:hover {
+    border-color: #60a5fa;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+
+  .card-flat {
+    @apply p-6 transition-all duration-300;
+
+    background: #162033;
+    border: 1px solid #334155;
+  }
+
+  .card-flat:hover {
+    background: #1e293b;
+    border-color: #60a5fa;
+  }
+
+  /* Navigation */
+.nav-link {
+  @apply font-light transition-colors duration-200;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  letter-spacing: 0.06em;
+}
+
+.nav-link:hover {
+  color: #F8FAFC;
+}
+
+  /* Form */
+  .field {
+    @apply w-full px-4 py-3 text-sm font-light
+           outline-none transition-all duration-200;
+
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+  }
+
+  .field::placeholder {
+    color: #64748b;
+  }
+
+  .field:focus {
+    border-color: #60a5fa;
+    background: #23314d;
+  }
+
+  /* Reveal Animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.65s ease,
+      transform 0.65s ease;
+  }
+
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* Cursor Blink */
+.cursor-blink {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #60a5fa;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Scroll Indicator */
+@keyframes scrollDrop {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 200%;
+  }
+}
+
+.scroll-indicator {
+  width: 2px;
+  height: 48px;
+  background: #334155;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-indicator::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #60a5fa;
+  animation: scrollDrop 1.8s ease infinite;
+}
+
+/* =====================================
+   ABOUT SECTION ANIMATION
+   DELETE THIS ENTIRE BLOCK
+   IF YOU DON'T WANT THE GLOW EFFECT
+===================================== */
+
+.about-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.15;
+}
+
+.about-glow-1 {
+  width: 450px;
+  height: 450px;
+  background: #3b82f6;
+  top: 10%;
+  left: -10%;
+  animation: floatGlow 18s ease-in-out infinite;
+}
+
+.about-glow-2 {
+  width: 500px;
+  height: 500px;
+  background: #60a5fa;
+  bottom: -15%;
+  right: -10%;
+  animation: floatGlowReverse 22s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(60px, -40px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes floatGlowReverse {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-80px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+}
+}
