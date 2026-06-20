@@ -93,8 +93,8 @@ function ProjectCard({ project, delay, onPlayDemo }) {
     >
       {/* Category */}
       <span
-        className="uppercase tracking-[0.25em] text-[10px] mb-3"
-        style={{ color: '#60A5FA' }}
+        className="uppercase tracking-[0.25em] text-[11px] font-bold mb-3"
+        style={{ color: '#93C5FD' }}
       >
         {project.category}
       </span>
@@ -112,7 +112,7 @@ function ProjectCard({ project, delay, onPlayDemo }) {
 
       {/* Description */}
       <p
-        className="text-sm leading-relaxed mb-5 flex-1"
+        className="text-m leading-relaxed mb-5 flex-1"
         style={{
           color: '#CBD5E1'
         }}
@@ -127,11 +127,12 @@ function ProjectCard({ project, delay, onPlayDemo }) {
             key={tag}
             className="
               px-2 py-1
-              text-[11px]
+              text-[12px]
               border
               border-slate-700
-              text-slate-400
+              text-slate-500
             "
+            style={{ color: '#93C5FD' }}
           >
             {tag}
           </span>

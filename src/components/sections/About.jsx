@@ -52,7 +52,7 @@ export default function About() {
         </div>
 
         {/* Bio + Divider + Skills */}
-        <div className="grid md:grid-cols-[1fr_1px_1fr] gap-x-16 md:gap-x-24 items-start">
+        <div className="grid md:grid-cols-[1fr_1px_1fr] gap-x-16 md:gap-x-24 gap-y-16 md:gap-y-0 items-start">
 
           {/* Bio */}
           <div ref={bioRef} className="reveal">
@@ -85,8 +85,8 @@ export default function About() {
           <div ref={skillsRef} className="reveal">
 
             <span
-              className="block mb-8 uppercase tracking-[0.5em] text-xs font-medium"
-              style={{ color: '#60A5FA' }}
+              className="block mb-12 uppercase tracking-[0.5em] text-xm  font-bold"
+              style={{ color: '#93C5FD' }}
             >
               Technical Range
             </span>
@@ -102,13 +102,13 @@ export default function About() {
                       style={{
                         background: idx === 0
                           ? 'linear-gradient(to bottom, #60A5FA, #3B82F6)'
-                          : '#334155'
+                          : '#60A5FA'
                       }}
                     />
                     <p
                       className="uppercase font-medium"
                       style={{
-                        color: idx === 0 ? '#E2E8F0' : '#64748B',
+                        color: idx === 0 ? '#E2E8F0' : '#E2E8F0',
                         letterSpacing: '0.1em',
                         fontSize: '0.7rem'
                       }}

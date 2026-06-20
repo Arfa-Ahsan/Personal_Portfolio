@@ -67,9 +67,9 @@ export default function Experience() {
               <div>
 
                 <h3
-                  className="text-3xl text-white mb-2"
+                  className="text-2xl text-white mb-2"
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif"
+                    fontFamily: "serif"
                   }}
                 >
                   {exp.company}
@@ -159,7 +159,7 @@ export default function Experience() {
                       />
 
                       <span
-                        className="leading-relaxed text-sm"
+                        className="leading-relaxed text-m"
                         style={{
                           color: '#CBD5E1'
                         }}

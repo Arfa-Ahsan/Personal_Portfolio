@@ -21,13 +21,13 @@ export const experience = [
     role: "Quality Assurance Engineer",
     period: "2025 — Present",
     location: "Karachi, Pakistan",
-    description: `1LINK is the national payment switch of Pakistan, enabling banks and financial institutions to transfer funds and process transactions securely across the country. As a Quality Assurance Engineer, I work on testing and validating these financial services to ensure they function accurately and reliably for millions of users.`,
+    description: `1LINK is Pakistan's national payment switch, helping banks transfer funds and process transactions securely across the country. As a QA Engineer, I test and validate these financial services to make sure they work accurately for millions of users.`,
     responsibilities: [
-      "Test debit and credit card services, online bill payment systems, and interbank fund transfers to ensure transactions are processed accurately and reliably",
+      "Test debit/credit card services, bill payments, and fund transfers to ensure accurate, reliable transactions.",
 
-      "Perform User Acceptance Testing (UAT), create and execute test cases, and validate new features, patches, and system enhancements before production release",
+      "Perform UAT, create and run test cases, and validate new features and updates before release.",
 
-      "Conduct API testing using Postman to verify transaction requests, responses, and end-to-end payment flows across different banking partners",
+      "Conduct API testing using Postman to verify transaction requests, responses, and payment flows across banking partners.",
     ],
 
     technologies: [
@@ -100,70 +100,88 @@ export const skills = [
 export const projects = [
   {
     name: "RadioCheck F1 Assistant",
+
     description:
-      "An AI-powered Formula 1 assistant built using LangGraph's multi-agent architecture. The system coordinates specialized agents to retrieve live driver and constructor standings, predict championship outcomes using Monte Carlo simulations, provide real-time weather insights, deliver official YouTube race highlights, and retrieve information through Google Search. All capabilities are accessible through a natural conversational interface.",
+      "An AI-powered Formula 1 assistant built with LangGraph's multi-agent system. It shows live driver and team standings, predicts race outcomes using Monte Carlo simulations, gives weather updates, and finds race highlights. You can chat with it like a normal conversation.",
+
     tags: [
       "Python",
+
       "LangGraph",
+
       "Multi-Agent Systems",
+
       "LLMs",
+
       "Web Scraping",
+
       "Monte Carlo Simulation",
     ],
-    category: "AI Agents",
-    link: "https://github.com/Arfa-Ahsan/RadioCheck-F1-Assistant",
-    demo:"/videos/F1 assistant demo video.mp4",
 
+    category: "AI Agents",
+
+    link: "https://github.com/Arfa-Ahsan/RadioCheck-F1-Assistant",
+
+    demo: "/videos/F1 assistant demo video.mp4",
   },
 
   {
     name: "AI Content Creation Agents",
+
     description:
-      "A CrewAI-powered multi-agent content generation platform that automates research, writing, and SEO optimization. The system employs three specialized agents: a Media Analyst for trend research, a Content Writer for platform-specific content generation, and an SEO Optimizer for improving discoverability and audience reach.",
+      "A CrewAI-powered platform that automates content creation. Three AI agents work together: one researches trends, one writes content, and one optimizes it for SEO. This makes content creation faster and easier.",
+
     tags: [
       "Python",
+
       "CrewAI",
+
       "LLMs",
+
       "SEO",
+
       "Content Generation",
+
       "Multi-Agent Systems",
     ],
+
     category: "AI Agents",
+
     link: "https://github.com/Arfa-Ahsan/Content_Creation_Agents",
-    demo:"/videos/content_creation_agents.mp4",
+
+    demo: "/videos/content_creation_agents.mp4",
   },
 
   {
     name: "PII Detection & Redaction (Audio)",
+
     description:
-      "An intelligent privacy-preserving AI system that detects and redacts sensitive personal information from audio recordings. The solution converts speech to text, identifies entities such as names, CNIC numbers, and account details using Named Entity Recognition (NER), and automatically removes sensitive information from recordings to support data privacy and compliance requirements.",
-    tags: [
-      "Python",
-      "ASR",
-      "NER",
-      "NLP",
-      "Data Privacy",
-      "HuggingFace",
-    ],
+      "An AI system that finds and removes private information from audio recordings. It converts speech to text, then detects sensitive data like names and CNIC numbers using NER. This helps protect privacy and meet data protection rules.",
+
+    tags: ["Python", "ASR", "NER", "NLP", "Data Privacy", "HuggingFace"],
+
     category: "NLP",
+
     link: "https://github.com/Arfa-Ahsan/PII_Detection_and_Redaction_audio_Project",
-    demo:"/videos/PII_detection&redaction.mp4"
+
+    demo: "/videos/PII_detection&redaction.mp4",
   },
 
   {
+
     name: "UrduWhiz",
+
     description:
-      "An AI-powered Urdu learning and reading platform designed for children. The system processes scanned Urdu storybooks in PDF format and enables interactive question answering over the content. Built using a Hybrid RAG (Retrieval-Augmented Generation) architecture that combines keyword-based retrieval, semantic search, and reranking techniques to deliver accurate and contextually relevant responses.",
-    tags: [
-      "Python",
-      "RAG",
-      "LLMs",
-      "Semantic Search",
-      "OCR",
-      "Education AI",
-    ],
+
+      "An AI-powered platform that helps kids learn to read Urdu. It reads scanned Urdu storybooks (PDFs) and answers questions about the story. It uses a Hybrid RAG system, mixing keyword search, semantic search, and reranking to give accurate answers.",
+
+    tags: ["Python", "RAG", "LLMs", "Semantic Search", "OCR", "Education AI"],
+
     category: "Generative AI",
+
     link: "https://github.com/Arfa-Ahsan/UrduWhiz",
-    demo:"/videos/UrduWhiz.mp4",
+
+    demo: "/videos/UrduWhiz.mp4",
+
   },
 ];
